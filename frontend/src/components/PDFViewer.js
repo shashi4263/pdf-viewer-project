@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
 
 // Initialize the socket connection
-const socket = io("https://scientific-synonymous-digestion.glitch.me/");
+const socket = io("http://localhost:4000");
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
