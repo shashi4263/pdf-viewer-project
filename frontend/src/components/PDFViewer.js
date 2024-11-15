@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
 
 // Initialize the socket connection
-const socket = io("http://localhost:4000");
+const socket = io("https://pdf-viewer-project.onrender.com/");
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
